@@ -2,26 +2,19 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
+
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 	http://www.springframework.org/schema/context
 	http;//www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.springcore.Student" name="student1">
-		<property name="studentId" value="1"/>
-			
-		<property name="studentName" value="Roshani"/>
-			
-		<property name="studentAddress" value="Surat"/>
-	</bean>
-	
-	<!-- Second Bean-->
-	<bean class="com.springcore.Student" name="student2">
-		<property name="studentId" value="2"/>
-			
-		<property name="studentName" value="Borsadiya"/>
-			
-		<property name="studentAddress" value="Surat"/>
-	</bean>
+	<!-- First Bean -->
+	<bean class="com.springcore.Student" name="student1"
+		p:studentId="1" p:studentName="Roshani" p:studentAddress="Surat" />
+
+	<!-- Second Bean -->
+	<bean class="com.springcore.Student" name="student2"
+		p:studentId="2" p:studentName="Borsadiya" p:studentAddress="Gujarat" />
+
 </beans>
