@@ -9,7 +9,7 @@
 	http;//www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="com.springcore.Student" name="student1">
-		<property name="studentID">
+		<property name="studentId">
 			<value>1</value>
 		</property>
 		<property name="studentName">
