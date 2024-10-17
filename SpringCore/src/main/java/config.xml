@@ -9,14 +9,19 @@
 	http;//www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="com.springcore.Student" name="student1">
-		<property name="studentId">
-			<value>1</value>
-		</property>
-		<property name="studentName">
-			<value>Roshani</value>
-		</property>
-		<property name="studentAddress">
-			<value>Surat</value>
-		</property>
+		<property name="studentId" value="1"/>
+			
+		<property name="studentName" value="Roshani"/>
+			
+		<property name="studentAddress" value="Surat"/>
+	</bean>
+	
+	<!-- Second Bean-->
+	<bean class="com.springcore.Student" name="student2">
+		<property name="studentId" value="2"/>
+			
+		<property name="studentName" value="Borsadiya"/>
+			
+		<property name="studentAddress" value="Surat"/>
 	</bean>
 </beans>
