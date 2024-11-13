@@ -18,4 +18,14 @@
 		<constructor-arg value="1" />
 	</bean>
 
+	<!-- Automatically select -->
+	<bean class="com.springcore.ci.Adition" name="add">
+		<constructor-arg value="12" />
+		<constructor-arg value="34" />
+	</bean>
+
+	<!-- Particular data type constructor -->
+	<!-- <bean class="com.springcore.ci.Adition" name="add"> <constructor-arg 
+		value="12" type="int"/> <constructor-arg value="34" type="int"/> </bean> -->
+
 </beans>
