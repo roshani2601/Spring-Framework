@@ -9,12 +9,14 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- First Bean -->
-	<bean class="com.springcore.Student" name="student1"
-		p:studentId="1" p:studentName="Roshani" p:studentAddress="Surat" />
+	<context:annotation-config />
 
-	<!-- Second Bean -->
-	<bean class="com.springcore.Student" name="student2"
-		p:studentId="2" p:studentName="Borsadiya" p:studentAddress="Gujarat" />
+	<bean class="com.springcore.auto.wire.annotation.Address"
+		name="address">
+		<property name="street" value="Vesu" />
+		<property name="city" value="Surat" />
+	</bean>
+
+	<bean class="com.springcore.auto.wire.annotation.Emp" name="emp1" />
 
 </beans>
