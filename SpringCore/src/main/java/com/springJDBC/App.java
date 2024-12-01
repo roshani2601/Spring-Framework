@@ -15,7 +15,7 @@ public class App {
 
 		// JdbcTemplate template = context.getBean("jdbcTemplate", JdbcTemplate.class);
 
-		// Insert
+		//----------------------------------------Insert-----------------------------------------
 		// String query = "insert into student (id,name,city) values(?,?,?)";
 
 		// int result = template.update(query, 7, "Shivangi", "Dhrol");
@@ -23,13 +23,20 @@ public class App {
 		// System.out.println("Number of record inserted! " + result);
 
 		StudentDao studentDao = context.getBean("studentdao", StudentDao.class);
+		//-----------------------------------------Insert-----------------------------------------
+		//Student student = new Student();
+		//student.setId(8);
+		//student.setName("Purv");
+		//student.setCity("hoo");
+		//int result = studentDao.insert(student);
+		//System.out.println("Student added! " + student);
+
+		// -----------------------------------------Update-----------------------------------------
 		Student student = new Student();
-		student.setId(8);
+		student.setId(5);
 		student.setName("Purv");
-		student.setCity("hoo");
-
-		int result = studentDao.insert(student);
-		System.out.println("Student added! " + student);
-
+		student.setCity("Borsadiya");
+		int result = studentDao.change(student);
+		System.out.println("Data updated!");
 	}
 }
