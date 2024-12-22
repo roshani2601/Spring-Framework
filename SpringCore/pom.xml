@@ -31,6 +31,14 @@
 			<version>6.1.2</version>
 		</dependency>
 
+		<!--Spring ORM-->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>6.1.2</version>
+		</dependency>
+
 		<!--Spring JDBC-->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 		<dependency>
